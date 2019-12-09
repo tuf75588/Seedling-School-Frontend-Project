@@ -26,9 +26,61 @@ body {
 
 .lede {
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.4em;
+	margin-top: 25px;
 }
 .main {
 	display: block;
 	margin: 0 auto;
+}
+.slideshow {
+	margin: 20px auto;
+	position: relative;
+	width: 500px;
+	height: 335px;
+	padding: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.slideshow > div {
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	right: 10px;
+	bottom: 10px;
+}
+
+.slideshow .cats {
+	left: 34px !important;
+}
+.image-buttons {
+	padding: 0;
+	text-align: center;
+}
+.image-buttons a {
+	background-color: rebeccapurple;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.slideshow .logo-img {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	opacity: 0;
+	width: inherit;
+	height: inherit;
+	transition: all linear 500ms;
+	-o-transition: all linear 500ms;
+	-moz-transition: all linear 500ms;
+	-webkit-transition: all linear 500ms;
+}
+
+.slideshow .logo-img:target {
+	left: 0;
+	z-index: 9;
+	opacity: 1;
 }
